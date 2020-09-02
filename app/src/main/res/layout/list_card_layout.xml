@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/ic_card_grey"
+    android:layout_marginHorizontal="15dp"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="15dp"
+    android:layout_height="180dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Kempgowda International Airport"
+        android:fontFamily="@font/nunito_semi_italic"
+        android:layout_marginLeft="20dp"
+        android:textSize="12dp"
+        android:id="@+id/airport_name"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="@font/prox_bold"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/item_sno"
+
+        android:layout_below="@id/airport_name"
+        android:text="TUX19MAA007"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Service before"
+        android:textSize="12dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_below="@id/item_sno"
+        android:fontFamily="@font/nunito_regular"
+        android:id="@+id/sbefore"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_below="@id/sbefore"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/clkicon"
+        android:src="@drawable/ic_clocl"
+        android:layout_height="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#FFF"
+        android:layout_marginLeft="10dp"
+
+        android:textSize="11dp"
+        android:layout_alignTop="@+id/clkicon"
+        android:layout_toRightOf="@id/clkicon"
+        android:fontFamily="@font/prox_bold"
+        android:id="@+id/deadtime"
+        android:layout_marginTop="0dp"
+        android:text="9:43PM"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_below="@id/sbefore"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/calicon"
+        android:src="@drawable/ic_cal"
+        android:layout_height="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#FFF"
+        android:layout_marginLeft="10dp"
+
+        android:textSize="11dp"
+        android:layout_alignTop="@+id/calicon"
+        android:layout_toRightOf="@id/calicon"
+        android:fontFamily="@font/prox_bold"
+        android:id="@+id/deaddate"
+        android:layout_marginTop="0dp"
+        android:text="July 9,2020"
+        android:layout_height="wrap_content"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        app:civ_border_color="#FFF"
+        android:id="@+id/cvr_img"
+        app:civ_border_width="1dp"
+        android:src="@drawable/samp"
+        />
+
+
+</RelativeLayout>

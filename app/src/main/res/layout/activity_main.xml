@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:blurkit="http://schemas.android.com/apk/res-auto"
+    android:background="#1A1A23"
+    android:id="@+id/blur_layout"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/ic_intersect_head"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/prox"
+            android:text="Hello,"
+            android:textSize="40dp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+
+            android:id="@+id/place_hello"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/prox_bold"
+            android:text="Ashwin"
+            android:textSize="40dp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="109dp"
+            android:id="@+id/username"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_timehold"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#FFF"
+                android:text="27"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="45dp"
+                android:id="@+id/date"
+                android:fontFamily="@font/prox"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#FFF"
+                android:text="December"
+                android:layout_marginTop="-6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/date"
+                android:textSize="15dp"
+                android:id="@+id/month"
+                android:fontFamily="@font/prox_bold"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_below="@id/month"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/clkicon"
+                android:src="@drawable/ic_clocl"
+                android:layout_height="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#FFF"
+                android:layout_marginLeft="5dp"
+                android:textSize="13dp"
+                android:layout_alignTop="@+id/clkicon"
+                android:layout_toRightOf="@id/clkicon"
+                android:fontFamily="@font/prox_bold"
+                android:layout_marginTop="0dp"
+                android:text="9:43PM"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/prox_bold"
+        android:textColor="#FFF"
+        android:layout_marginLeft="10dp"
+        android:textSize="35dp"
+        android:letterSpacing="0.02"
+        android:layout_below="@id/header"
+        android:text="Your Contracts"
+        android:id="@+id/urcont"
+
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/urcont"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_line"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/urcont"
+        android:layout_marginTop="30dp"
+        android:id="@+id/contract_list"
+        android:layout_height="wrap_content"/>
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/blurLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        blurkit:blk_blurRadius="4"
+        android:visibility="invisible"
+        blurkit:blk_downscaleFactor="0.12"
+        blurkit:blk_fps="0" />
+</RelativeLayout>
